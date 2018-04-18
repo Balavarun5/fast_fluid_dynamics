@@ -11,7 +11,7 @@ import arrayfire as af
 af.set_backend('opencl')
 af.set_device(0)
 
-import params
+import parameters as params
 
 pl.rcParams['figure.figsize'  ] = 9.6, 6.
 pl.rcParams['figure.dpi'      ] = 100
@@ -61,7 +61,7 @@ def contour_plot(u, v, t_n):
     pl.xlabel('x')
     pl.ylabel('y')
     pl.colorbar()
-    pl.savefig('results/ldc/%04d' %(t_n) + '.png')
+    pl.savefig('results/images/%04d' %(t_n) + '.png')
     pl.close('all')
 
 

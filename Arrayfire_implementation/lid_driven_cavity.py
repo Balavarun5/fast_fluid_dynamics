@@ -10,7 +10,7 @@ print(af.info())
 from matplotlib import pyplot as pl
 from tqdm import trange
 
-import params
+import parameters as params
 
 
 def add_boundary_conditions(u, v):

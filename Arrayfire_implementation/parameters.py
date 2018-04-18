@@ -2,7 +2,7 @@ import arrayfire as af
 import numpy as np
 
 # Parameter n for grid resolution.
-n = 60
+n = 30
 
 t       = 30
 delta_t = 0.01
