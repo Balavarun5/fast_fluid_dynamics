@@ -1,4 +1,4 @@
-###Fast Fluid Dynamics###
+# Fast Fluid Dynamics
 
 Fast Fluid Dynamics is a computationally cheap way to evolve stable fluids. The
 seminal
@@ -23,3 +23,13 @@ lid driven cavity can be seen here for a Reynolds number of
 and [400](octave_implementation/results/u_profile_re_400.png). These trends show
 that the value is converging to the verified values as the grid size used for
 the same lid decreases.
+
+
+The aim of the thesis which was to develop a code which implements Fast Fluid Dynamics and
+verifies the claim that FFD is indeed faster than CFD methods has been achieved. The code is
+completely vectorized and the improvements made on the available code is starkly visible.
+The pdf of the thesis is also uploaded, which details the work done,
+specifically the improvements made in speed of the simulation.
+
+
+Thanks.

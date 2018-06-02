@@ -4,8 +4,8 @@ u100_paper = [0,-0.03717,-0.04192,-0.04775,-0.06434,-0.10150,-0.15662,-0.21090,-
 u400_paper = [0, -0.08186,-0.09266,-0.10338,-0.14612,-0.24299,-0.32726,-0.17119,-0.11477,0.02135,0.16256,0.29093,0.55892,0.61756,0.68439,0.75837,1];
 
 %Change first two variables
-N=[99,33,65];
-dt = 0.01;
+N = [256, 128, 65];
+dt = 0.02;
 
 h100 = figure();
 h400 = figure();
@@ -36,7 +36,7 @@ figure(h100)
 hold on
 plot(y_paper,u100_paper, 'o', 'linewidth',2);
 
-legend('FFD simulation (N=16)', 'FFD simulation (N=32)',...
+legend('FFD simulation (N=256)', 'FFD simulation (N=128)',...
     'FFD simulation (N=64)','Ghia, Ghia and Shin', 'location', 'NW');
 title('u velocity at x = 0.5 for RE=100', 'fontweight',...
     'bold','fontsize', 15);
@@ -48,7 +48,7 @@ figure(h400)
 hold on
 plot(y_paper,u400_paper, 'o', 'linewidth', 2);
 
-legend('FFD simulation (N=16)', 'FFD simulation (N=32)',...
+legend('FFD simulation (N=256)', 'FFD simulation (N=128)',...
     'FFD simulation (N=64)','Ghia, Ghia and Shin', 'location', 'NW');
 title('u velocity at x = 0.5 for RE=400', 'fontweight',...
     'bold','fontsize', 15);
